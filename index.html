@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carrera de motos</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <!-- El SDK de JS principal de Firebase siempre es necesario y debe aparecer primero -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+
+    <!-- TODO: Agrega SDKs para los productos Firebase que quieres usar
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      //  Configuración de Firebase de tu aplicación web
+     const firebaseConfig = {
+  apiKey: "AIzaSyAMmJW6890yP7bpi6TSdvAcWDIvDG-ri94",
+  authDomain: "clasesamuel-2be43.firebaseapp.com",
+  databaseURL: "https://clasesamuel-2be43-default-rtdb.firebaseio.com",
+  projectId: "clasesamuel-2be43",
+  storageBucket: "clasesamuel-2be43.appspot.com",
+  messagingSenderId: "104128904864",
+  appId: "1:104128904864:web:c56dbe02645515280893c5"
+};
+      // Inicializar Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/form.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/player.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
